@@ -1,0 +1,596 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    font-family: 'Segoe UI' ;
+    src: url('../fonts/SegoeUI/Segoe\ UI.ttf');
+}
+
+@font-face {
+    font-family: 'Verdana' ;
+    src: url('../fonts/Verdana/verdana.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;   
+}
+
+.container::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+div#topPage{
+    height: 75px;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    z-index: 1;
+}
+
+div#topPage nav{
+    width: 53%;
+    float: left;
+}
+
+div#topPage div.logo{
+    padding: 0 20px;
+    width: 6%;
+    float: left
+}
+
+div#topPage nav ul li{
+    float: left;
+    width: 118px;
+    list-style: none;
+    text-align: center;
+}
+
+div#topPage div.logo a{
+    background: url('../img/favicon.svg') no-repeat center center;
+    width: 45px;
+    height: 42px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 2px;
+}
+
+div#topPage nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #282a35;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 26px 0;
+}
+
+div#topPage nav ul li  a:hover{
+    background-color: #04AA6D;
+    color: aliceblue;
+} 
+
+div#topPage section{
+    width: 41%;
+    float: right;
+}
+
+div#topPage section ul{
+    padding: 1rem;
+}
+
+div#topPage section ul li{
+    float: left;
+    width: 100px;
+    list-style: none;
+    margin-right: 15px;
+}
+
+div#topPage section ul li:first-child{
+    color: white ;
+    background-color: #282a35;
+    padding: 9px 0px;
+    border-radius: 20px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+div#topPage section ul li:first-child:hover{
+    background-color: #04AA6D;
+}
+
+div#topPage section ul li a{
+    text-decoration: none;
+}
+
+div#topPage section ul li button{
+    padding: 4px 10px;
+    border: 1px solid #282a35;
+    margin-left: 2px;
+    border-radius: 15px 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: white;
+}
+
+div#topPage section ul li a:first-child{
+    color: aliceblue;
+}
+
+div#topPage section ul li:nth-child(2) a{
+    color: #282a35;
+    padding: 11px 8px;
+}
+
+div#topPage section ul li:nth-child(2) a:hover{
+    color: white;
+    
+}
+
+div#topPage section ul li:nth-child(2){
+   background-color: #FFC0C7;
+   padding: 10px 8px;
+    border-radius: 20px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    width:130px ;
+}
+
+
+div#topPage section ul li:nth-child(2):hover{
+    background-color: #04AA6D;
+}
+
+div#topPage section ul li:nth-child(3) a{
+    padding: 11px 8px;
+    color: #282a35;
+}
+
+div#topPage section ul li:nth-child(3) a:hover{
+    color: white;
+}
+
+div#topPage section ul li:nth-child(3){
+    padding: 10px 8px;
+     border-radius: 20px 20px;
+     font-size: 18px;
+     font-weight: 900;
+     text-align: center;
+     width:100px ;
+ }
+ 
+ 
+ div#topPage section ul li:nth-child(3):hover{
+     background-color: #04AA6D;
+ }
+
+ div#topPage section ul li:nth-child(4){
+    padding: 10px 27px;
+     border-radius: 20px 20px;
+     font-size: 18px;
+     font-weight: 900;
+     text-align: center;
+     width:130px ;
+     color: white;
+     background-color: #04AA6D;  
+ }
+
+ div#topPage section ul li:nth-child(4):hover{
+    background-color: #0b9261;
+ }
+
+ header{
+    height: 44px;
+    background-color: #282a35;
+    width: 100%;
+    font-family: 'Source Sans Pro';
+    position: sticky;
+    top: 0;
+    z-index: 1;
+ }
+
+header nav{
+    float: left;
+    width: 90%;
+}
+
+header nav ul{
+    padding: 0.75rem 0;
+    letter-spacing: 1px;
+}
+
+header nav ul li{
+    float: left;
+    list-style: none;
+    text-align: left;
+}
+
+header nav ul li a{
+    padding: 12px 20px ;
+}
+
+header nav ul li a.active{
+    background-color: #04AA6D;
+}
+
+header nav ul li a:hover{
+    background-color: black;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+
+
+header article{
+    float: left;
+    width: 10%;
+}
+
+article ul{
+    padding: 12px 0;
+}
+article ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+article ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px 12px;
+}
+
+article ul li a:hover{
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+main aside{
+    width: 16%;
+    background-color: #E7E9EB;
+    font-family: Segoe UI,sans-serif ;
+    position: sticky;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 44px);
+    padding-top: 20px;
+    left: 0;
+    top: 44px;
+    float: left;
+    line-height: 22px;
+} 
+
+
+
+main aside div.leftSide{
+    padding: 2px 1px 1px 0px;
+    background-color: transparent;
+}
+
+
+
+main aside div.leftSide h3{
+    font-size: 21px;
+    font-weight: 400;
+    padding:  8px 15px   ;
+}
+
+main aside div.leftSide a{
+    display: block;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: black;
+    padding: 3px  15px ;
+}
+
+main aside div.leftSide a:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+main aside div.leftSide a.active{
+    background-color: #159f6d;
+    color: whitesmoke;
+}
+
+main article {
+    float: left;
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+}
+
+main article h1{
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.btn{
+    background-color: #04AA6D;
+    color: #fff ;
+    padding: 0.75rem ;
+    border-radius: 5px ;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn:hover{
+    background-color:#078658 ;
+    cursor: pointer;
+}
+
+main article div.first{
+    padding: 120px 32px 32px 32px;
+}
+
+main article div.first button.right{
+    float: right;
+}
+
+main article section{
+    background-color: #D9EEE1;
+    padding: 32px 32px 32px 32px;
+margin-bottom: 25px;;
+}
+
+
+main article > div.ttt{
+padding: 32px ;
+}
+
+main article > div.ttt h2 {
+padding : 10px 0px;
+font-size: 32px;
+font-weight: 400;
+border-top: 1px solid #eee;
+}
+
+main article > div.ttt P {
+    padding : 10px 0px;
+    font-size: 15px;    
+    }
+
+main article section div{
+    margin-bottom: 10px;
+}
+
+main article section div p{
+    font-size: 19px;
+    line-height: 2.50rem;
+}
+
+main article section button.white-green{
+    display: block;
+    margin-bottom: 17px;
+}
+
+main article section button.dark{
+    position: relative;
+    background-color: #282A35;
+    color: #fff ;
+    padding: 0.75rem 5px ;
+    border-radius: 5px ;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    margin-top: 15px;
+    width: 222px;
+}
+
+main article section button.dark .noti{
+    position: absolute;
+    top: -20px;
+    background-color: #FFF4A3;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: rotate(-20deg);
+    color: #282A35;
+    left: -7px;
+}
+
+
+
+main article section button.dark:hover{
+    background-color: black;
+}
+
+main > section{
+    width: 14%;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+    border-left: 1px solid #f1f1f1;
+    padding: 45px 8px ;
+    text-align: center;
+}
+
+main > section div{
+    background-color: #282A35;
+    padding: 20px 8px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+main > section div button{
+    background-color: #FFF4A3 ;
+    padding: 5px 14px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+main > section div p{
+    color: whitesmoke;
+}
+
+main > section div h4{
+    color: #FFC0C7;
+    margin-top: 20px;
+}
+
+main > section div img{
+    background: url('../img/img-vid.png') no-repeat center center/cover;
+    width: 140px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+main > section div a:hover{
+background-image: rgba(0,0,0,0.8);
+}
+
+main section nav {
+    background-color: #fff;
+}
+
+main section nav h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section nav a img{
+    background: url('../img/picker.png') no-repeat center center ;
+    width: 90px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main section nav section{
+    font-size: 30px;
+}
+
+main section nav section a{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+main section nav section i:hover{
+    color: #1dc789;
+}
+
+
+article > div > h1:hover {
+    animation: jello  2s;
+}
+
+
+nav {
+display: flex;
+gap: 10px;
+justify-content: space-between;
+} */
+
+* {
+    margin: 0px;
+}
+
+
+body {
+    background-color: beige;
+    background: url(violin-music-3-1990446.jpg) no-repeat center center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.empty section ul {
+    margin : 30px  0px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-family: verdana;
+    /* flex-direction: row; */
+    padding: 30px 30px;
+    list-style: none;
+    gap: 20px;
+}
+
+
+
+.head ul {
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+header nav {
+    background-color: black;
+}
+
+.head ul li:hover  {
+    background-color: chocolate;
+
+}
+
+.clearfix {
+clear: both;
+}
+
+
+
+
+main section.aside  {
+    width: 12%;
+    margin-top: 50px;
+    color: antiquewhite;
+    font-size: 30px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+main section.aside div:hover  {
+    background-color: saddlebrown;
+    }
+
+
+Section.photo {
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px 20px;
+    /* margin-top: 20px; */
+    float: right;
+} 
+
+
+
+
+
+
+
